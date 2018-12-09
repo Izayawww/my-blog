@@ -5,7 +5,7 @@ tags:
 ---
 
 ### 前言
-前段时间用mpvue开发过一个仿网易云音乐的微信小程序([链接](https://github.com/lucaswww/my-project))，但似乎mpvue好像是不再维护了，偶然得知有个[Taro](https://nervjs.github.io/taro/docs/README.html)也可以开发小程序，但是用的是[React](https://react.docschina.org/docs/hello-world.html)，正好也想了解了解React,所以体验了一下Taro。[git地址](https://github.com/lucaswww/my-taro)  
+前段时间用mpvue开发过一个仿网易云音乐的微信小程序([链接](https://github.com/Izayawww/my-project))，但似乎mpvue好像是不再维护了，偶然得知有个[Taro](https://nervjs.github.io/taro/docs/README.html)也可以开发小程序，但是用的是[React](https://react.docschina.org/docs/hello-world.html)，正好也想了解了解React,所以体验了一下Taro。[git地址](https://github.com/Izayawww/my-taro)  
 程序体验  
 ![](https://user-gold-cdn.xitu.io/2018/11/28/1675820ca6aac26e?w=258&h=258&f=jpeg&s=45801)
 发布成功以后发现正式环境github的api

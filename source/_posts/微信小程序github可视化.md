@@ -21,7 +21,7 @@ tags:
 * 点击环形图弹出对应信息
 ### 预览
 
-[git地址](https://github.com/lucaswww/wx-gitinfo)
+[git地址](https://github.com/Izayawww/wx-gitinfo)
 
 ![](https://user-gold-cdn.xitu.io/2018/9/7/165b24bf9e8c67fd?w=425&h=746&f=gif&s=998855)
 ### 所用
