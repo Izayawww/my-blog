@@ -81,7 +81,7 @@ deploy:
   type: git
   repo: 
     git: https://github.com/Izayawww/Izayawww.github.io.git
-    coding: https://git.coding.net/lucaswww/Izayawww.git
+    coding: https://git.coding.net/lucaswww/Lucaswww.git
   name: Izayawww
   email: w1250407177@outlook.com
   branch: master

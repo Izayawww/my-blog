@@ -1,7 +1,8 @@
 ---
-title: '''electron-vue仿网易云音乐桌面应用'''
+title: electron-vue仿网易云音乐桌面应用
 date: 2018-11-05 19:48:07
-tags:
+tags: [vue,electron]
+description: electron-vue仿网易云音乐桌面应用
 ---
 
 ### 简介

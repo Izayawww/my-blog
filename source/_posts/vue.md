@@ -1,5 +1,7 @@
 ---
 title: vue
+tag: 知识
+description: 一些vue的知识
 ---
 ### MVVM
     全称是Model-View-ViewModel；
