@@ -8,7 +8,7 @@ subtitle: Don’t cross the bridge till you come to it.
 description: 我的一些整理
 keywords:
 author: Izaya
-language: zh-Hans
+language: zh-CN
 timezone:
 
 # URL
@@ -73,7 +73,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: icarus
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

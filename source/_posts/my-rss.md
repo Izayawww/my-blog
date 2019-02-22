@@ -2,6 +2,9 @@
 title: my-rss
 date: 2019-01-29 14:41:15
 tags: vue,rss
+categories: 个人项目
+thumbnail: /img/rss.svg
+toc: true
 ---
 ### Izaya'rss
 数据来自rsshub官网，进行格式化以后使用vue+element呈现

@@ -2,6 +2,9 @@
 title: mpvue微信小程序-仿网易云音乐
 date: 2018-09-04 11:32:31
 tags: [小程序,vue]
+categories: 个人项目
+toc: true
+thumbnail: /img/mpvue.png
 description: 在尝试开发了一个微信小程序之，后发现有mpvue这么个东西可以来开发小程序以后就忍不住了，所以把小程序和我用vue开发过的版本结合修改以后，再尝试用mpvue+iview-weapp开发一个版本。   
 ---
 ### 前言
@@ -9,6 +12,7 @@ description: 在尝试开发了一个微信小程序之，后发现有mpvue这�
 后台接口用的是[NeteaseCloudMusicApi](https://binaryify.github.io/NeteaseCloudMusicApi/#/),感谢大佬的分享  
 
 [git地址](https://github.com/Izayawww/my-project)，demo项目代码质量不是很好，哈哈哈哈多多见谅😁
+<!-- more -->
 ### 预览
 
 ![](https://user-gold-cdn.xitu.io/2018/8/31/1658e1511bcb13fe?w=250&h=450&f=gif&s=4675839)

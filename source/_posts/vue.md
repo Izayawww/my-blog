@@ -1,14 +1,17 @@
 ---
 title: vue
 tag: 知识
+categories: 知识
 description: 一些vue的知识
+thumbnail: /img/Vue.svg
+toc: true
 ---
 ### MVVM
     全称是Model-View-ViewModel；
     1、M就是Model模型层，存的⼀个数据对象。 
     2、V就是View视图层，所有的html节点在这⼀层。 
     3、VM就是ViewModel，它通过data属性连接Model模型层，通过el属性连接View视图层。 
-
+<!-- more -->
 ### vue生命周期
     总共分为8个阶段创建前/后，载入前/后，更新前/后，销毁前/后。
     创建前/后： 在beforeCreated阶段，vue实例的挂载元素el还没有。

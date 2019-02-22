@@ -2,11 +2,15 @@
 title: electron-vue仿网易云音乐桌面应用
 date: 2018-11-05 19:48:07
 tags: [vue,electron]
+categories: 个人项目
 description: electron-vue仿网易云音乐桌面应用
+thumbnail: /img/elevue.png
+toc: true
 ---
 
 ### 简介
 像官网说的那样，electron-vue就是基于 vue 来构造 electron 应用程序的样板代码。electron-vue开发起来就和vue一样，只是如果有特殊的需求需要修改应用的话就要用到electron相关的api，项目中的数据来自[这里](https://binaryify.github.io/NeteaseCloudMusicApi)，感谢大佬的分享。项目地址[git地址](https://github.com/Izayawww/my-electron-vue)   
+<!-- more -->
 ### electron
 Electron是由Github开发，用HTML，CSS和JavaScript来**构建跨平台桌面应用程序**的一个开源库。 Electron通过将Chromium和Node.js合并到同一个运行时环境中，并将其打包为Mac，Windows和Linux系统下的应用来实现这一目的。(摘之[官网](https://electronjs.org/docs/tutorial/about))  
 
