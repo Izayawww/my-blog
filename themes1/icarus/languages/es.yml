@@ -1,0 +1,38 @@
+#By SrWoOoW
+common:
+    archive:
+        one: 'Archivo'
+        other: '归档'
+    category:
+        one: 'Categoria'
+        other: '分类'
+    tag:
+        one: 'Etiqueta'
+        other: '标签'
+    post:
+        one: 'Entrada'
+        other: '文章'
+    prev: 'Anterior'
+    next: 'Siguiente'
+widget:
+    follow: 'follow'
+    recents: '最近'
+    links: '链接'
+    tag_cloud: 'Nube de etiquetas'
+    catalogue: '目录'
+article:
+    more: 'Read More'
+    comments: 'Comentarios'
+    read: 'read'
+    about: 'About'
+    words: 'words'
+search:
+    search: 'Search'
+    hint: 'Type something...'
+insight:
+    hint: 'Type something...'
+    posts: 'Entradas'
+    pages: 'Pages'
+    categories: 'Categorias'
+    tags: 'Etiquetas'
+    untitled: '(Untitled)'
