@@ -21,21 +21,19 @@ toc: true
 
     
     ```
-
     const count = arr => arr.reduce((acc, val) => {
         acc[val] = (acc[val] || 0) + 1;
         return acc;
     },{})
     count([1,1,2,3,1,1,2]); // {1:4,2:2,3:1}
-
+    
     ```
-
+<!-- more -->
 ### 数组扁平化(完全)
     concat() 方法用于连接两个或多个数组。该方法不会改变现有的数组，而仅仅会返回被连接数组的一个副本。
 
     
     ```
-
     const aryFlatten = arr => [].concat(...arr.map(v => Array.isArray(v) ? aryFlatten(v) :v))
     
     reduce版
@@ -185,6 +183,13 @@ toc: true
     const fb = (n) => Array.from({length:n+1}).reduce((acc,val,i) => 
         (acc.concat(i>1?acc[i-2]+acc[i-1]:i)),[])
     
+    fb(5) // [1,1,2,3,5]
+    只要最后一项
+
+    function fb(n){
+        return n < 2 ? n : fb(n - 1) + fb(n - 2);
+    }
+    fb(5) // 5
     ```
 
 ### 先立即执行一次再节流
@@ -254,4 +259,95 @@ toc: true
         : clone;
     };
     
+    ```
+
+### 计算大整数之和
+    ```
+    function sumStrings(a, b) {
+    var res = '', c = 0;
+    a = a.split('');
+    b = b.split('');
+    while (a.length || b.length || c) {
+        c += ~~a.pop() + ~~b.pop();
+        res = c % 10 + res;
+        c = c > 9;
+    }
+    return res.replace(/^0+/, '');
+    }
+
+    ```
+
+### new的模拟实现
+    ```
+    function objectFactory() {
+
+        var obj = new Object(),
+
+        Constructor = [].shift.call(arguments);
+
+        obj.__proto__ = Constructor.prototype;
+
+        var ret = Constructor.apply(obj, arguments);
+
+        return typeof ret === 'object' ? ret : obj;
+
+    };
+
+    ```
+
+### 继承
+#### 构造继承
+    ```
+    function Parent(){
+        this.arr = [1,2,3]
+        this.name = 'parent'
+    }
+
+    function Child(){
+        Parent.apply(this);
+    }
+
+    Parent.prototype.id = '1'
+    var child1 = new Child();
+    console.log(child1.name,child1.id) // parent undefined
+
+    总结：构造继承不会继承父级原型上的属性
+    ```
+#### 原型继承
+    ```
+
+    function Parent(){
+        this.arr = [1,2,3]
+        this.name = 'parent'
+    }
+
+    function Child(){
+        this.age = 3
+    }
+
+    Child.prototype = new Parent();
+    Parent.prototype.id = '1'
+    let child1 = new Child();
+    console.log(child1.name,child1.id) // parent 1
+    child1.arr[0] = 3
+    child1.name = 'child'
+    let child2 = new Child();
+    console.log(child2.arr,child2.name) // [3,2,3],parent
+
+    总结：原型继承继承了原型上的属性，但是改变原型上的应用类型，所有实例对象的该属性都会被改变
+
+    ```
+#### 组合继承
+    ```
+    function Parent(){
+        this.arr = [1,2,3]
+        this.name = 'parent'
+    }
+
+    function Child(){
+        this.age = 3
+    }
+    
+    let obj = Object.create(Parent.prototype)
+    Child.prototype.constructor = Child
     ```

@@ -66,10 +66,29 @@ Vue.use(ElementUI);
 mainWindow = new BrowserWindow({
     height: 670,//窗口高度
     width: 1000,//窗口宽度
-    frame: true,//是否显示窗口边框
+    frame: false,//是否显示窗口边框
     resizable: false,//可否缩放
-    movable: true//可否移动
+    movable: false//可否移动
   })
+//设置不可移动以后
+单独在组件中在设置某个区域可移动，添加
+  -webkit-app-region: drag;
+//自定义边框以后使用
+  //组件中
+  const { ipcRenderer: ipc } = require("electron");
+
+  <span @click="send('close')">×</span>
+  
+  send(type) {
+      ipc.send(type);
+  },
+
+  // src/main/index.js
+
+  import { app, BrowserWindow, ipcMain } from 'electron'
+  ipcMain.on('min', e=> mainWindow.minimize());
+  ipcMain.on('max', e=> mainWindow.maximize());
+  ipcMain.on('close', e=> mainWindow.minimize());
 ```
 ### iconfont
 element的icon可能并不能满足我们的需求，这时候可以选择使用阿里的iconfont。  
@@ -82,6 +101,28 @@ element的icon可能并不能满足我们的需求，这时候可以选择使用
 `<link rel="stylesheet" href="//at.alicdn.com/t/font_883876_bfzwywhpal.css">`
 使用`<i class="iconfont icon-play-circle"></i>`
 ![](https://user-gold-cdn.xitu.io/2018/11/2/166d3cdb83b43cdf?w=575&h=299&f=png&s=26167)
+
+### scss全局引入
+```
+新建 src/renderer/globals.scss
+$brand-primary: blue;
+
+然后在 .electron-vue/webpack.renderer.config.js 里编辑 vue-loader 的配置
+sass: 'vue-style-loader!css-loader!sass-loader?indentedSyntax=1&data=@import "./src/renderer/globals"',
+scss: 'vue-style-loader!css-loader!sass-loader?data=@import "./src/renderer/globals"',
+
+最后修改
+{
+    test: /\.scss$/,
+    use: ['vue-style-loader', 'css-loader', {
+      loader: 'sass-loader',
+      options: {
+        data: '@import "./src/renderer/globals";'
+      }
+    }]
+  },
+别忘了";"
+```
 ### 打包
 直接使用`npm run build`就可以打包，若是要针对不同平台则按需添加参数，打包后的安装包在项目的build文件夹下
 
