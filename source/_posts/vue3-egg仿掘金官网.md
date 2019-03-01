@@ -3,7 +3,7 @@ title: vue3+egg仿掘金官网
 date: 2019-01-29 14:40:38
 tags: [vue,egg]
 categories: 个人项目
-thumbnail: /img/juejin.svg
+thumbnail: /img/p4.jpeg
 toc: true
 description: 看了egg.js后突然就想搞个全栈的项目玩玩，又喜欢在掘金上逛，所以就开发了这个项目。虽说vue3.0还没定下来，但已经能用了，喜欢它的直接在网页上搞项目，所以就用了3。 
 ---

@@ -3,7 +3,7 @@ title: 微信小程序github可视化
 date: 2018-09-07 12:37:40
 tags: 小程序
 categories: 个人项目
-thumbnail: /img/github.svg
+thumbnail: /img/p6.jpeg
 toc: true
 description: 一直想做一些数据可视化的东西，所以就尝试在微信小程序中获取用户的一些GitHub上的数据以后，使用[wx-charts]
 ---

@@ -3,7 +3,7 @@ title: my-rss
 date: 2019-01-29 14:41:15
 tags: vue,rss
 categories: 个人项目
-thumbnail: /img/rss.svg
+thumbnail: /img/p2.jpeg
 toc: true
 ---
 ### Izaya'rss

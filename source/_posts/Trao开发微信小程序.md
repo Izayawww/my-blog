@@ -5,7 +5,7 @@ tags: [小程序,vue,taro]
 categories: 个人项目
 description: 用taro开发的一个比较完整的小程序版网易云音乐   
 toc: true
-thumbnail: /img/taro.jpg
+thumbnail: /img/p10.jpeg
 ---
 ### 前言
 前段时间用mpvue开发过一个仿网易云音乐的微信小程序([链接](https://github.com/lucaswww/my-project))，但似乎mpvue好像是不再维护了，偶然得知有个[Taro](https://nervjs.github.io/taro/docs/README.html)也可以开发小程序，但是用的是[React](https://react.docschina.org/docs/hello-world.html)，正好也想了解了解React,所以体验了一下Taro。[git地址](https://github.com/lucaswww/my-taro)  

@@ -4,7 +4,7 @@ date: 2018-09-03 18:09:05
 tags: 知识
 categories: 知识
 description: 一些知识
-thumbnail: /img/tips.svg
+thumbnail: /img/p8.jpeg
 toc: true
 ---
 ### 一些知识
@@ -303,3 +303,28 @@ toc: true
 ### https简单概括
     HTTPS要使客户端与服务器端的通信过程得到安全保证，必须使用的对称加密算法，但是协商对称加密算法的过程，需要使用非对称加密算法来保证安全，然而直接使用非对称加密的过程本身也不安全，会有中间人篡改公钥的可能性，所以客户端与服务器不直接使用公钥，而是使用数字证书签发机构颁发的证书来保证非对称加密过程本身的安全。这样通过这些机制协商出一个对称加密算法，就此双方使用该算法进行加密解密。从而解决了客户端与服务器端之间的通信安全问题。
 
+### 减少reflow/repaint
+
+    1）不要一条一条地修改DOM的样式。与其这样，还不如预先定义好css的class，然后修改DOM的className。
+
+    // bad
+    var left = 10,
+    top = 10;
+    el.style.left = left + "px";
+    el.style.top  = top  + "px";
+    
+    // Good
+    el.className += " theclassname";
+    
+    // Good
+    el.style.cssText += "; left: " + left + "px; top: " + top + "px;";
+    2）把DOM离线后修改。如：
+
+        使用documentFragment 对象在内存里操作DOM
+        先把DOM给display:none(有一次reflow)，然后你想怎么改就怎么改。比如修改100次，然后再把他显示出来。
+        clone一个DOM结点到内存里，然后想怎么改就怎么改，改完后，和在线的那个的交换一下。
+    3）不要把DOM结点的属性值放在一个循环里当成循环里的变量。不然这会导致大量地读写这个结点的属性。
+
+    4）尽可能的修改层级比较低的DOM。当然，改变层级比较底的DOM有可能会造成大面积的reflow，但是也可能影响范围很小。
+
+    5）为动画的HTML元件使用fixed或absoult的position，那么修改他们的CSS是不会reflow的。

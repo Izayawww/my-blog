@@ -3,7 +3,7 @@ title: vue
 tag: 知识
 categories: 知识
 description: 一些vue的知识
-thumbnail: /img/Vue.svg
+thumbnail: /img/p7.jpeg
 toc: true
 ---
 ### MVVM
