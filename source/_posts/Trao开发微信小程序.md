@@ -1,6 +1,6 @@
 ---
 title: taro仿网易云音乐-小程序版
-date: 2018-12-28 11:32:31
+# date: 2018-12-28 11:32:31
 tags: [小程序,vue,taro]
 categories: 个人项目
 description: 用taro开发的一个比较完整的小程序版网易云音乐   

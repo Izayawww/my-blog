@@ -2,6 +2,7 @@
 title: vue
 tag: 知识
 categories: 知识
+date: 2018-09-13 14:12:42
 description: 一些vue的知识
 thumbnail: /img/p7.jpeg
 toc: true
